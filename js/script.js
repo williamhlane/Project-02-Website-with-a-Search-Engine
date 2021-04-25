@@ -1,7 +1,8 @@
 let showSearchResults = () => {
   let sections;
+  //Get value of the search textbox and put it in a value searchBox
   let searchBox = document.getElementById("searchText").value;
-  //console.log(searchBox);
+  //searchGiphy api using fetch
   fetch('https://api.giphy.com/v1/gifs/search?api_key=FQWp0dGlXW9H0IAChHdmCHWPbQCbCCUq&q=' + searchBox)
     .then((res) => {
       return res.json()
