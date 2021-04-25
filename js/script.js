@@ -8,11 +8,11 @@ let showSearchResults = () => {
       return res.json()
     }).then((json) => {
      // console.log(json + json.data + json.data[0] + json.data[0].images);
-      let spans;
+      let spans = "";
       for (let ri of json.data) {
         let imgUrl = ri.images.original.url;
         spans += "<span><img src=" + '"' + imgUrl + '"' + " /> </span>";
-        console.log(imgUrl);
+        console.log(imgUrl + spans);
         //undefined
       }
       let spansDiv = document.getElementsByTagName('div');
