@@ -1,14 +1,24 @@
 body {
-    background-color: grey;
+    background-color: rgb(54, 153, 54);
 }
 /*This is the css for the DIV and inside DIV*/
-div {
-    background-color: lightgrey;
+div#main {
     position: absolute;
+    background-color: white;
     width: 99%;
     height: calc(100% - 110px);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+div#gifDiv {
+    background-color: white;
+    position: relative;
+    width: 98%;
+    height: 100%;
     overflow-y: scroll;
-
+    margin: auto;
+    
+    
 }
 /*This is the CSS in the footer*/
 footer {
@@ -17,10 +27,15 @@ footer {
     height: 100px;
     bottom: 0;
     overflow: hidden;
+    background: rgba(0, 0, 0, 0.73);
+
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 5px;
 }
 #bottomcontrols {
     float: right;
-   
+    padding: 10px;
 }
 h2 {
     display: inline;

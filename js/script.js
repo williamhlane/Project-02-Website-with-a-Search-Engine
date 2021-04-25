@@ -16,7 +16,7 @@ let showSearchResults = () => {
         //undefined
       }
       let spansDiv = document.getElementsByTagName('div');
-      spansDiv[0].innerHTML = spans;
+      spansDiv[1].innerHTML = spans;
     })
 
 
