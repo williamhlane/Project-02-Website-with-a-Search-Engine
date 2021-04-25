@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang='en'>
-    <head>
-        <title>Search</title>
-        <script src="js/script.js"></script>
-        <!--This is the style above widths above 320px-->
-        <link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
-        <!--This stylesheet is for max-width: 320-->
-        <link rel="stylesheet" type="text/css" href="css/style320.css" media="(max-width: 320px)"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div id="main">
-            <div id="gifDiv">
 
+<head>
+    <title>Search</title>
+    <script src="js/script.js"></script>
+    <!--This is the style above widths above 320px-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+    <!--This stylesheet is for max-width: 320-->
+    <link rel="stylesheet" type="text/css" href="css/style320.css" media="(max-width: 320px)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div id="main">
+        <div id="gifDiv">
+            <div>
+                <h1>Welcome, Ready to search?</h1>
+                <p>Looking to search for a gif? Well you have come to the wirte place. You will notice the layout
+                    is a little unorthidox, the controls can be found at the bottom of the page to the right. According
+                    to
+                    Wikipedia about 90% of people are right handed so it is set up for righty. Just type in what you are
+                    searching for and hit the search button.
+                </p>
             </div>
         </div>
-        <!--Controls on footer for mobile devices, this will be at the bottom to the right for right hand people.
+    </div>
+    <!--Controls on footer for mobile devices, this will be at the bottom to the right for right hand people.
         It will make it easyer to use with the right thumb.-->
-        <footer>
-            <span id="bottomcontrols">
-                <h2>SEARCH HERE:</h2>
-                <input type="text" name="search" id="searchText"  />
-                <input type="submit" onclick="showSearchResults()" id="searchSubmit" />     
-            </span>
-        </footer>
-    </body>
+    <footer>
+        <span id="bottomcontrols">
+            <h2>SEARCH HERE:</h2>
+            <input type="text" name="search" id="searchText" />
+            <input type="submit" onclick="showSearchResults()" id="searchSubmit" value="SEARCH" />
+        </span>
+    </footer>
+    <div id="imageViewer">
+        <div>
+            <img id="fullSizeImg" />
+            <a onclick="closeImageViewer()" class="imageControls">Close Viewer</a>
+        </div>
+    </div>
+</body>
+
 </html>
