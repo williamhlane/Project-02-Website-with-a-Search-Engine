@@ -1,5 +1,9 @@
 body {
     background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(50,50,50);
+    text-shadow: 1px 1px black;
+
 }
 #imageViewer {
 	display: none;
@@ -8,16 +12,9 @@ body {
     width: 100%;
     height: 100%;
 	background-color: rgba(0,0,0, .5);
+    text-align: center;
+}
 
-}
-#imageViewer > img {
-    height: 75%;
-}
-.imageControls {
-    color: white;
-    background-color: black;
-    border-radius: 2px;
-}
 /*This is the css for the DIV and inside DIV*/
 div#main {
     position: absolute;
@@ -68,6 +65,15 @@ footer {
 #bottomcontrols {
     float: right;
     padding: 10px;
+
+}
+.buttons {
+    color:rgb(100,100,100);
+    text-shadow: 1px 1px black; 
+    border-radius: 5px;
+    background-color: white;
+    
+    padding: 2px;
 }
 h2 {
     display: inline;

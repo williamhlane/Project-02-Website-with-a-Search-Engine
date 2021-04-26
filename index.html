@@ -2,12 +2,12 @@
 <html lang='en'>
 
 <head>
-    <title>Search</title>
-    <script src="js/script.js"></script>
+    <title>Search Giphy</title>
+    <script src="js/main.js"></script>
     <!--This is the style above widths above 320px-->
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
     <!--This stylesheet is for max-width: 320-->
-    <link rel="stylesheet" type="text/css" href="css/style320.css" media="(max-width: 320px)" />
+    <link rel="stylesheet" type="text/css" href="css/style320.css" media="(max-width: 320px)"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -32,13 +32,14 @@
         <span id="bottomcontrols">
             <h2>SEARCH HERE:</h2>
             <input type="text" name="search" id="searchText" />
-            <input type="submit" onclick="showSearchResults()" id="searchSubmit" value="SEARCH" />
+            <button type="submit" onclick="showSearchResults()" id="searchSubmit" class="buttons">Search</button>
+            <button type="submit" onClick="window.location.reload(false)" class="buttons">Reset Page</button>
         </span>
     </footer>
     <div id="imageViewer">
         <div>
-            <img id="fullSizeImg" />
-            <a onclick="closeImageViewer()" class="imageControls">Close Viewer</a>
+            <img id="fullSizeImg" onclick="closeImageViewer()" />
+            
         </div>
     </div>
 </body>
