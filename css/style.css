@@ -1,8 +1,8 @@
 body {
     background-color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:rgb(50,50,50);
-    text-shadow: 1px 1px black;
+    color:rgb(168, 164, 164);
+    text-shadow: -1px -1px black;
 
 }
 #imageViewer {
@@ -49,6 +49,14 @@ div#gifDiv {
 img {
   width: 75%;  
 }
+@media (min-width: 1000px) {
+    h1 {
+        font-size: 35px;
+    }
+    p {
+        font-size: 25px;
+    }
+  }
 /*This is the CSS in the footer*/
 footer {
     position: absolute;
@@ -56,7 +64,6 @@ footer {
     height: 100px;
     bottom: 0;
     overflow: hidden;
-
     background-image: linear-gradient(rgb(210,210,210) , rgb(110,110,110));
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -69,11 +76,16 @@ footer {
 }
 .buttons {
     color:rgb(100,100,100);
-    text-shadow: 1px 1px black; 
+    background-image: linear-gradient(rgb(210,210,210) , rgb(110,110,110));
+    text-shadow: -1px -1px black; 
     border-radius: 5px;
     background-color: white;
     
     padding: 2px;
+}
+.buttons:hover {
+    background-image: linear-gradient(rgb(110,110,110) , rgb(210,210,210));
+    color: white;
 }
 h2 {
     display: inline;
